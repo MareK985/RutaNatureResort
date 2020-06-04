@@ -48,6 +48,26 @@
         <div class="circle">
           <img class="circle-icon" alt="" src="~assets/icons/cow.svg" />
         </div>
+        <!-- SMOOBU -->
+        <div
+          id="smoobuApartment359093en"
+          class="calendarWidget"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
+          <div
+            class="calendarContent"
+            data-load-calendar-url="https://login.smoobu.com/en/cockpit/widget/single-calendar/359093"
+            data-verification="946dab3ee3f7e6fca10cb45f3d67236b505070996b8ea7492a4ac00c68daaafd"
+            data-baseUrl="https://login.smoobu.com"
+            data-disable-css="false"
+          ></div>
+          <script
+            type="text/javascript"
+            src="https://login.smoobu.com/js/Apartment/CalendarWidget.js"
+          ></script>
+        </div>
+        <!-- end OF SMOOBU -->
       </div>
     </section>
     <!-- The video -->
@@ -283,7 +303,7 @@
         <img src="~/assets/logo/logo-svetina.svg" alt="logo" class="logo" />
       </div>
       <div class="copyright">
-        <span><MareUX /></span>
+        <span><MareUX /> ></span>
       </div>
       <div style="color:white" class="copyright">
         {{ $t("copyright") }}
@@ -415,8 +435,8 @@ export default {
 }
 
 .circle {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background: #6d98a8; /* $primary */
   display: flex;
@@ -507,7 +527,7 @@ export default {
   }
   .logo {
     width: 80%;
-    margin-top: 60%;
+    margin-top: 35%;
   }
   .copyright {
     font-size: 0.6em;

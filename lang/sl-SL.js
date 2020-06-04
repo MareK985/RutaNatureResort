@@ -90,7 +90,7 @@ export default {
   privacyPolicy1: "Izjava o zasebnosti",
   accept: "SPREJMEM",
   deny: "NE SPREJMEM",
-  designedBy: "Izdelava spletne strani: ",
+  designedBy: "Oblikovanje & izdelava: ",
   copyright: "Vse pravice pridržane. Copyright ETN d.o.o.",
   generalTerms: "Splošni pogoji poslovanja",
 };

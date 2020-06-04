@@ -93,7 +93,7 @@ export default {
   privacyPolicy1: "Privacy Policy",
   accept: "I ACCEPT",
   deny: "I DO NOT ACCEPT",
-  designedBy: "Developed By: ",
+  designedBy: "Designed % developed by: ",
   copyright: "All rights reserved. Copyright ETN d.o.o.",
   generalTerms: "General Terms",
 };
