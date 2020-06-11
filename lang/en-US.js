@@ -37,9 +37,9 @@ export default {
   quoteAuthor1: "Angela, Belgium",
   quoteDate1: "dec. 2019",
   quote2:
-    "Beautiful house at a great mountain top location. Mitja was very responsive and made sure our stay is as nice as possible, even just for a short 2-day stay. Very much recommended!",
-  quoteAuthor2: "Angela, Belgium",
-  quoteDate2: "dec. 2019",
+    "Ranch is located in an extremely beautiful location surrounded with nature, with a beautiful view that you can admire from at least 3 large terraces / balconies. Fully equipped house comes with an actual mini SPA with sauna, jacuzzi and outdoor pool. Then there’s the coffee machine, billiards, hand football and ping pong table. We had a lot of fun. Hosts were very responsive and friendly. I would warmly recommend a visit!",
+  quoteAuthor2: "Klara, Slovenia",
+  quoteDate2: "jun. 2020'",
   // TERMS & CONDITIONS
   priceIncludes: "Price includes",
   priceIncludes1: "Overnight stay at lodgement",

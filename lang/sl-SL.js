@@ -35,9 +35,9 @@ export default {
   quoteAuthor1: "Angela, Belgija",
   quoteDate1: "dec. 2019",
   quote2:
-    "Čudovita hiša na lepi gorski lokaciji. Mitja je bil zelo odziven in poskrbel, da je bilo naše bivanje čim bolj prijetno, tudi če samo za kratek dvodnevni postanek. Zelo priporočam!",
-  quoteAuthor2: "Angela, Belgija",
-  quoteDate2: "dec. 2019",
+    "Ranč stoji na izjemno lepi lokaciji v naravi, s krasnim razgledom, ki ga lahko občuduješ z vsaj 3 velikih teras/balkonov. Oprema hiše je dovršena, vsebuje namreč pravi mali SPA s savno, jacuzzijem in zunanjim bazenom. Potem so tu tudi kavomat, biljard miza, ročni nogomet in ping pong. Zabave ni manjkalo. Gostitelji so bili zelo odzivni in prijazni. Obisk bi toplo priporočala!",
+  quoteAuthor2: "Klara, Slovenija",
+  quoteDate2: "jun. 2020",
   priceIncludes: "Cena vključuje",
   priceIncludes1: "Nočitev v namestitvi",
   priceIncludes2: "Neomejena uporaba lastne vroče kadi / jacuzzija",

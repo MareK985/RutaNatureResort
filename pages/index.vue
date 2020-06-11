@@ -284,6 +284,10 @@
             <h3>
               {{ $t("quoteAuthor1") }} <br /><span>{{ $t("quoteDate1") }}</span>
             </h3>
+            <div class="rating">
+              <span>★</span><span>★</span><span>★</span><span>★</span
+              ><span>☆</span>
+            </div>
           </div>
           <div>
             <Fas class="circle-icon" i="heart" />
@@ -294,6 +298,10 @@
             <h3>
               {{ $t("quoteAuthor2") }} <br /><span>{{ $t("quoteDate2") }}</span>
             </h3>
+            <div class="rating">
+              <span>★</span><span>★</span><span>★</span><span>★</span
+              ><span>★</span>
+            </div>
           </div>
         </VueSlickCarousel>
       </div>
