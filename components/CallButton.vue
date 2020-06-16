@@ -5,7 +5,7 @@
         class="phoneicon"
         src="https://freeiconshop.com/wp-content/uploads/edd/phone-flat.png"
     /></a>
-    <a class="mbscreenphone phonelink" href="tel:+38641777704"
+    <a class="mbscreenphone phonelink" href="tel:+38641763005"
       ><img
         class="phoneicon"
         src="https://freeiconshop.com/wp-content/uploads/edd/phone-flat.png"

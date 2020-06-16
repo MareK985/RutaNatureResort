@@ -335,17 +335,19 @@
       </div>
       <div class="contact-icons">
         <div class="contact-icon">
-          <a href="mailto: etn@turnsek.net" taget="_blank"
+          <a href="mailto: mitja@smart-home-rentals.com" target="_blank"
             ><Fas style="color: white; font-size: 3em;" i="envelope"
           /></a>
         </div>
         <div class="contact-icon">
-          <a href="" taget="_blank"
+          <a href="https://www.facebook.com/svetina.ranch/" target="_blank"
             ><Fab style="color: white;" class=" float" i="facebook"
           /></a>
         </div>
         <div class="contact-icon">
-          <a href="" target="_blank"
+          <a
+            href="https://www.instagram.com/svetina_ranch/?fbclid=IwAR1up_zEN2vwnXabv6IS6plKnYeUQ_61h2LPKe84k5vkrvabhXL7DLYxiKs"
+            target="_blank"
             ><Fab style="color: white;" class=" float" i="instagram"
           /></a>
         </div>
