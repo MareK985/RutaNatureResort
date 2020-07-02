@@ -26,7 +26,7 @@ export default {
   priceDiscount: "* 10% discount if you stay for 1 week or more",
   unitDetails1: "** 2 bedrooms, 3 beds, 1 bathroom",
   unitDetails2: "*** 3 bedrooms, 5 beds, 2.5 bathrooms",
-  cleaningFee: "Cleaning fee: 50 EUR",
+  cleaningFee: "Cleaning fee: 50-100 EUR",
   activities: "activities",
   addressTitle: "ADDRESS:",
   address: "Javorniki 23, 3220 Štore",

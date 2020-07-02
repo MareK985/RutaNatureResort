@@ -19,15 +19,15 @@
       <tbody>
         <tr>
           <th>{{ $t("app1") }}</th>
-          <td>100</td>
-          <td>150</td>
-          <td>120</td>
+          <td>140</td>
+          <td>200</td>
+          <td>180</td>
         </tr>
         <tr>
           <th>{{ $t("app2") }}</th>
-          <td>140</td>
           <td>180</td>
-          <td>160</td>
+          <td>240</td>
+          <td>220</td>
         </tr>
       </tbody>
     </table>

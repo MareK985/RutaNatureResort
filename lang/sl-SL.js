@@ -25,7 +25,7 @@ export default {
   priceDiscount: "* 10% popusta, če ostanete 1 teden ali več",
   unitDetails1: "** 2 spalnici, 3 postelje, 1 kopalnica",
   unitDetails2: "*** 3 spalnice, 5 postelj, 2.5 kopalnice",
-  cleaningFee: "Strošek čiščenja: 50 EUR",
+  cleaningFee: "Strošek čiščenja: 50-100 EUR",
   activities: "Doživetja",
   addressTitle: "NASLOV:",
   address: "Javorniki 23, SI-3220 Štore",
