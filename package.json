@@ -20,6 +20,7 @@
     "@nuxtjs/bulma": "^1.3.0",
     "aos": "^3.0.0-beta.6",
     "axios": "^0.19.2",
+    "bootstrap-vue": "^2.15.0",
     "dotenv": "^8.2.0",
     "nodemailer": "^6.4.10",
     "nuxt": "^2.13.3",
@@ -28,6 +29,7 @@
     "validator": "^13.1.1",
     "vue-analytics": "^5.22.1",
     "vue-carousel": "^0.18.0",
+    "vue-js-modal": "^2.0.0-rc.6",
     "vue-slick-carousel": "^1.0.6",
     "vuelidate": "^0.7.5",
     "xss-filters": "^1.2.7"

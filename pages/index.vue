@@ -1,6 +1,42 @@
 <template>
   <div>
-    <div class="parallax1">
+    <div class="project-hero">
+      <video
+        id="videoBG"
+        autoplay
+        loop
+        muted
+        playsinline
+        poster="~assets/img/bg-hero.jpg"
+      >
+        <source src="~assets/video/svetina_bg.mp4" type="video/mp4" />
+      </video>
+      <header class="viewport-header">
+        <LangNavigation />
+        <h1>
+          {{ $t("subheader") }}
+          <span>{{ $t("header") }}</span>
+        </h1>
+        <a>
+          <div class="cta">
+            <button data-toggle="modal" data-target="#modal" type="button">
+              REZERVIRAJ TERMIN!
+            </button>
+            <!-- <Modal v-show="isModalVisible" @close="closeModal" />-->
+          </div>
+        </a>
+
+        <div is-active class="modal">
+          <div class="modal-background"></div>
+          <div class="modal-content">
+            TEST
+            <!-- Any other Bulma elements you want -->
+          </div>
+          <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+      </header>
+    </div>
+    <!-- <div class="parallax1">
       <div data-aos="fade-down-right" data-aos-duration="1000">
         <img
           src="~/assets/logo/logo-svetina_mini.svg"
@@ -16,7 +52,7 @@
       </div>
       <ContactForm />
       <LangNavigation />
-    </div>
+    </div> -->
 
     <section>
       <div
@@ -358,7 +394,8 @@
 
 <script>
 import VueSlickCarousel from "vue-slick-carousel";
-import ContactForm from "~/components/ContactForm.vue";
+// import Modal from "~/components/Modal.vue";
+// import ContactForm from "~/components/ContactForm.vue";
 import Cenik from "~/components/Cenik.vue";
 import TC from "~/components/T&C.vue";
 import ActivitiesList from "~/components/ActivitiesList.vue";
@@ -372,7 +409,7 @@ import "vue-slick-carousel/dist/vue-slick-carousel.css";
 
 export default {
   components: {
-    ContactForm,
+    // ContactForm,
     Cenik,
     TC,
     ActivitiesList,
@@ -381,12 +418,7 @@ export default {
     VueSlickCarousel,
     LangNavigation,
     MareUX,
-  },
-  nuxtI18n: {
-    paths: {
-      sl: "/",
-      en: "/",
-    },
+    // Modal,
   },
   data() {
     return {
@@ -431,11 +463,96 @@ export default {
       },
     };
   },
+  methods: {
+    showModal() {
+      this.isModalVisible = true;
+    },
+    closeModal() {
+      this.isModalVisible = false;
+    },
+  },
+  nuxtI18n: {
+    paths: {
+      sl: "/",
+      en: "/",
+    },
+  },
 };
 </script>
 
 <style lang="css" scoped>
 @import "./../css/style.css";
+
+#videoBG {
+  object-fit: cover;
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.viewport-header {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #videoBG {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #videoBG {
+    width: auto;
+    height: 100%;
+  }
+}
+
+/* CTA button */
+.cta {
+  height: 50px;
+  width: 150px;
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+button {
+  height: 50px;
+  width: 150px;
+  float: right;
+  cursor: pointer;
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  color: white;
+  font-weight: bolder;
+  font-size: 16px;
+  outline: none;
+}
+.btn {
+  width: 0;
+  height: 50px;
+  background-color: #fbfbfb;
+  transition: width 0.3s ease-in;
+}
+button:hover {
+  color: #6d98a8;
+  transition: color 0.3s ease-in;
+}
+.cta:hover .btn {
+  width: 150px;
+  background-color: #fff;
+  color: #6d98a8;
+}
+/* end of CTA button */
 
 .logo-header {
   width: 4%;

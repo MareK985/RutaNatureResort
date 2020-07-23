@@ -7,14 +7,14 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: "Svetina Ranch",
+    title: "Ruta Nature Resort",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: "Live at the ranch - escape to the nature",
+        content: "Go into the wild - by Soča river",
       },
     ],
     link: [
@@ -35,7 +35,8 @@ export default {
   plugins: [
     { src: "@/plugins/aos", ssr: false },
     { src: "~/plugins/vuelidate" },
-    { src: "./plugins/GoogleAnalytics.js", mode: "client" }, // make sure that local storage is only used on client-side
+    { src: "~/plugins/GoogleAnalytics.js", mode: "client" }, // make sure that local storage is only used on client-side
+    { src: "~/plugins/vue-js-modal.js" },
   ],
   /*
    ** Nuxt.js dev-modules
@@ -50,6 +51,7 @@ export default {
    */
   modules: [
     // Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
+    "bootstrap-vue/nuxt",
     "@nuxtjs/bulma",
     "nuxt-fontawesome", // Imports FontAwesome 5 SVG icons
     [
