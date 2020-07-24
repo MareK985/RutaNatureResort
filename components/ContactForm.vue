@@ -232,7 +232,6 @@ export default {
   background: rgba(255, 255, 255, 0.25);
   border-radius: 5px;
   display: flex;
-  position: absolute;
   flex-direction: column;
   align-items: center;
   width: 60%;

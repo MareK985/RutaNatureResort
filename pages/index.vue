@@ -19,21 +19,44 @@
         </h1>
         <a>
           <div class="cta">
-            <button data-toggle="modal" data-target="#modal" type="button">
+            <button @click="showModal">
               REZERVIRAJ TERMIN!
             </button>
-            <!-- <Modal v-show="isModalVisible" @close="closeModal" />-->
           </div>
         </a>
-
-        <div is-active class="modal">
-          <div class="modal-background"></div>
-          <div class="modal-content">
-            TEST
-            <!-- Any other Bulma elements you want -->
-          </div>
-          <button class="modal-close is-large" aria-label="close"></button>
+        <!--modal-->
+        <div id="app">
+          <modal v-show="isModalVisible" @close="closeModal">
+            <template v-slot:header>
+              <h2>
+                Case study #1:
+                <span style="font-size: 1.5em;">ExpAR Store</span>
+              </h2>
+            </template>
+            <template v-slot:body>
+              <ContactForm />
+              <!-- <b-container class="bv-example-row">
+                <b-row>
+                  <b-col sm="8" class="block"
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Ad veniam repellendus eius reprehenderit. Aliquam vero
+                    cumque incidunt, in molestiae ipsa laboriosam aut
+                    exercitationem neque, iste officiis? Veniam dolores hic
+                    aspernatur.</b-col
+                  >
+                  <b-col sm="4" class="block"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rem veritatis a, ad eligendi voluptatum deserunt labore!
+                    Deserunt, sit fugit atque fugiat, reiciendis deleniti
+                    reprehenderit architecto quaerat aperiam a, culpa
+                    praesentium.</b-col
+                  >
+                </b-row>
+              </b-container> -->
+            </template>
+          </modal>
         </div>
+        <!--END of modal -->
       </header>
     </div>
     <!-- <div class="parallax1">
@@ -127,7 +150,7 @@
     </div>
     <!-- SLIDER -->
     <div class="slider">
-      <VueSlickCarousel v-bind="settings">
+      <!-- <VueSlickCarousel v-bind="settings">
         <div>
           <img
             src="~/assets/img/slides/slide1.jpg"
@@ -275,7 +298,7 @@
             class="responsive"
           />
         </div>
-      </VueSlickCarousel>
+      </VueSlickCarousel> -->
     </div>
     <!-- SLIDER -->
 
@@ -394,8 +417,8 @@
 
 <script>
 import VueSlickCarousel from "vue-slick-carousel";
-// import Modal from "~/components/Modal.vue";
-// import ContactForm from "~/components/ContactForm.vue";
+import modal from "~/components/Modal.vue";
+import ContactForm from "~/components/ContactForm.vue";
 import Cenik from "~/components/Cenik.vue";
 import TC from "~/components/T&C.vue";
 import ActivitiesList from "~/components/ActivitiesList.vue";
@@ -408,8 +431,9 @@ import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 
 export default {
+  name: "App",
   components: {
-    // ContactForm,
+    ContactForm,
     Cenik,
     TC,
     ActivitiesList,
@@ -418,10 +442,11 @@ export default {
     VueSlickCarousel,
     LangNavigation,
     MareUX,
-    // Modal,
+    modal,
   },
   data() {
     return {
+      isModalVisible: false,
       settings: {
         dots: false,
         infinite: false,
@@ -434,6 +459,7 @@ export default {
         initialSlide: 0,
         focusOnSelect: true,
         adaptiveHeight: true,
+        showModal: true,
         responsive: [
           {
             breakpoint: 1024,
@@ -498,6 +524,31 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 98;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade.leave {
+  opacity: 0;
+}
+
+.block {
+  background: white;
+  margin: 1em;
 }
 
 @media (min-aspect-ratio: 16/9) {
