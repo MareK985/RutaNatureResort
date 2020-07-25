@@ -64,11 +64,11 @@ export default {
   box-shadow: 2px 2px 20px 1px;
   overflow-x: auto;
   display: flex;
-  top: 25%;
+  top: 15%;
   right: 25%;
   left: 25%;
   width: 50%;
-  height: 50%;
+  height: 65%;
   /* flex-direction: column; */
 }
 .modal-header,
@@ -89,13 +89,17 @@ export default {
   position: relative;
   width: 100%;
   height: 100%;
+  padding: 0.6em;
 }
 .btn-close {
+  position: relative;
+  top: 0;
+  margin-left: auto;
   border: none;
-  font-size: 20px;
-  padding: 20px;
+  font-size: 35px;
+  padding: 15px;
   cursor: pointer;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #4aae9b;
   background: transparent;
 }
@@ -104,5 +108,14 @@ export default {
   background: #4aae9b;
   border: 1px solid #4aae9b;
   border-radius: 2px;
+}
+@media screen and (max-width: 680px) {
+  .modal {
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    height: 70%;
+    border-radius: 15px;
+  }
 }
 </style>

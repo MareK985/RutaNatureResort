@@ -16,9 +16,21 @@ body, html {
     top: 0;
     left: 0;
     margin: 0;
-    color :$base;
+    color:$base;
     line-height: 180%;
     text-align: center;
+}
+
+label {
+    color:$base;
+    font-weight: bold;
+    letter-spacing: 0.3vw;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    padding-left: 5px;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 35px;
 }
 
 h1 {

@@ -256,14 +256,10 @@ export default {
   padding: 0px 5px;
 }
 
-label {
-  padding-left: 5px;
-  font-size: 2em;
-  font-weight: 100;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 35px;
+.control {
+  text-align: left;
 }
+
 .email-field {
   margin-top: 10px;
   width: 50%;
@@ -284,8 +280,9 @@ label {
   label {
     padding-left: 10px;
     font-size: 1em;
-    font-weight: 100;
-    line-height: 55px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 45px;
   }
   .select {
     margin-top: 5px;
