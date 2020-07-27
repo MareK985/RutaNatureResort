@@ -16,6 +16,7 @@ export default {};
   padding: 20px;
   position: absolute;
   right: 0;
+  top: 10px;
 }
 .language {
   color: white;

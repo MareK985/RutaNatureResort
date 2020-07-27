@@ -1,7 +1,7 @@
 // en-US.js with English translations
 export default {
-  subheader: "Escape into the nature",
-  header: "Live on a Ranch",
+  subheader: "Go into the wild",
+  header: "Château by Soča river",
   arrival: "Arrival",
   departure: "Departure",
   adults: "Adults",

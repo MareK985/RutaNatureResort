@@ -9,7 +9,7 @@
         playsinline
         poster="~assets/img/bg-hero.jpg"
       >
-        <source src="~assets/video/svetina_bg.mp4" type="video/mp4" />
+        <source src="~assets/video/Cezsoca_hero.mp4" type="video/mp4" />
       </video>
       <header class="viewport-header">
         <LangNavigation />
@@ -27,12 +27,6 @@
         <!--modal-->
         <div id="app">
           <modal v-show="isModalVisible" @close="closeModal">
-            <template v-slot:header>
-              <h2>
-                Case study #1:
-                <span style="font-size: 1.5em;">ExpAR Store</span>
-              </h2>
-            </template>
             <template v-slot:body>
               <ContactForm />
               <!-- <b-container class="bv-example-row">
@@ -576,8 +570,8 @@ export default {
   margin-right: auto;
 }
 button {
-  height: 50px;
-  width: 150px;
+  height: 60px;
+  width: 220px;
   float: right;
   cursor: pointer;
   background: none;
@@ -585,8 +579,9 @@ button {
   border-radius: 3px;
   color: white;
   font-weight: bolder;
-  font-size: 16px;
+  font-size: 18px;
   outline: none;
+  padding: 10px;
 }
 .btn {
   width: 0;

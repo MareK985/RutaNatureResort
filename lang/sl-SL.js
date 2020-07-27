@@ -1,7 +1,7 @@
 // sl-SL.js with slovenian translations
 export default {
-  subheader: "Pobegni v naravo",
-  header: "Posestvo na samem",
+  subheader: "Pobegni v divjino",
+  header: "Posestvo ob Soči",
   arrival: "Prihod",
   departure: "Odhod",
   adults: "Odrasli",

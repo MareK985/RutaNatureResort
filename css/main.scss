@@ -43,8 +43,11 @@ h1 {
     text-align: center;
     span {
       display: block;
-      font-size: 10vw;
-      letter-spacing: -1.2vw;
+      font-size: 8vw;
+      letter-spacing: -0.5vw;
+      margin-left: 1em;
+      margin-right: 1em;
+
     }
   }
 p {
@@ -81,8 +84,7 @@ tr {
 
 @media screen and (max-width: 600px) {
     h1 {
-        font-size: 3.5vh;
-        font-weight: 600;
+        font-weight: 300;
         padding: 10px 20px 0px 20px ;
         color: white;
     }
